@@ -1,5 +1,4 @@
 $SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); 
-$SMTPInfo = [text.encoding]::GetEncoding("windows-1251").getString($d)
 $SMTPInfo.EnableSsl = $true; 
 $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('digisparkbot', 'FB7knT5wBVdWNx9'); 
 $ReportEmail = New-Object System.Net.Mail.MailMessage; 
