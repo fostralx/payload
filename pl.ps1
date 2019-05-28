@@ -1,4 +1,3 @@
-chcp 65001;
 $SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); 
 $SMTPInfo.EnableSsl = $true; 
 $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('digisparkbot', 'FB7knT5wBVdWNx9'); 
