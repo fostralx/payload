@@ -6,4 +6,4 @@ $ReportEmail.From = 'digisparkbot@gmail.com';
 $ReportEmail.To.Add('eniluxperx@gmail.com'); 
 $ReportEmail.Subject = 'DigiSpark Report'; 
 $ReportEmail.Body = 'hello'; 
-$SMTPInfo.Send($ReportEmail)\"
+$SMTPInfo.Send($ReportEmail);
